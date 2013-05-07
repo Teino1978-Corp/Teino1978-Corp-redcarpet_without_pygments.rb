@@ -1,6 +1,7 @@
 module Jekyll
   class RedcarpetWithoutPygmentsParser < Converter
     safe true
+    priority :high
 
     def initialize(config)
       require 'redcarpet'
